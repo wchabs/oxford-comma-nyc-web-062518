@@ -7,6 +7,7 @@ def oxford_comma(array)
   elsif num_of_elements >= 3
     last_element = array.pop
     phrase = array.join(", ")
-    phrase += ", and #{last_element}"
+    phrase += ", and #{last_
+    element}"
   end
 end
