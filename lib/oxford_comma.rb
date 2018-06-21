@@ -9,4 +9,5 @@ def oxford_comma(array)
     last_element = array.pop
     phrase = array.join(", ")
     phrase += ", and #{last_element}"
+  end
 end
