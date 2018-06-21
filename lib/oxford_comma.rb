@@ -1,11 +1,10 @@
 def oxford_comma(array)
   num_of_elements = array.size
-  case num_of_elements
-  when 1
+  if num_of_elements == 1
     array[0]
-  when 2
+  elsif num_of_elements == 2
     array.join(" and ")
-  when > 2
+  elsif num_of_elements >= 3
     last_element = array.pop
     phrase = array.join(", ")
     phrase += ", and #{last_element}"
